@@ -286,10 +286,13 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
             <!-- Simple TikTok Icon/Text -->
             <span>TikTok: @team.drag.pelan</span>
           </a>
-          <a href="https://discord.gg/vJ4RtDJeK9" target="_blank" class="text-gray-400 hover:text-white transition-colors font-bold uppercase tracking-wider hover:text-neon-blue flex items-center gap-2">
-            <!-- Simple Discord Icon/Text -->
-             <span>Discord Community</span>
-          </a>
+          <div class="flex flex-col items-center gap-1">
+            <a href="https://discord.gg/vJ4RtDJeK9" target="_blank" class="text-gray-400 hover:text-white transition-colors font-bold uppercase tracking-wider hover:text-neon-blue flex items-center gap-2">
+              <!-- Simple Discord Icon/Text -->
+               <span>Discord Community</span>
+            </a>
+            <span class="text-[10px] text-white font-bold font-racing tracking-wide text-center max-w-[200px]">*Wajib punya atribut TDP sebelum join!</span>
+          </div>
         </div>
         <div class="pt-8 border-t border-zinc-900 text-sm text-gray-600">
           &copy; {{ new Date().getFullYear() }} Team Drag Pelan Store. <br class="sm:hidden" />Not affiliated with Roblox Corporation.
