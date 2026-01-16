@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Passion+One:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+  .clip-path-slant {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@theme {
+  --color-racing-red: #ff0000;
+  --color-racing-black: #111111;
+  --color-neon-blue: #00ffff;
+  --font-racing: Orbitron, sans-serif;
+  --font-logo: "Passion One", cursive;
+  --animate-spin-slow: spin 3s linear infinite;
+  --animate-drive: drive 2s linear infinite;
+}
+
+body {
+  @apply bg-zinc-900 text-white font-sans overflow-x-hidden;
+}
