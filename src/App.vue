@@ -60,16 +60,16 @@ onMounted(() => {
 });
 
 const products = [
-  { id: 1, title: 'Team Drag Pelan Official Shirt', price: 5, image: teamDragPelanOfficialShirt, type: 'Shirt' },
-  { id: 2, title: 'TDP Sweater', price: 5, image: tdpSweater, type: 'Shirt' },
-  { id: 3, title: 'TDP Sport Pants', price: 5, image: tdpSportPants, type: 'Pants' },
-  { id: 4, title: 'TDP On Fire Shirt', price: 5, image: tdpOnFireShirt, type: 'Shirt' },
-  { id: 5, title: 'TDP V4 Pinky Boy', price: 5, image: tdpV4PinkyBoy, type: 'Shirt' },
-  { id: 6, title: 'TDP V4 Pinky Pants', price: 5, image: tdpV4PinkyPants, type: 'Pants' },
-  { id: 7, title: 'TDP MECHANIC V1', price: 5, image: tdpMechanicV1, type: 'Shirt' },
-  { id: 8, title: 'TDP MECHANIC PANTS', price: 5, image: tdpMechanicPants, type: 'Pants' },
-  { id: 9, title: 'Jaket TDP', price: 5, image: jaketTdp, type: 'Shirt' },
-  { id: 10, title: 'Celana Jumper TDP Grey', price: 5, image: celanaJumperTdpGrey, type: 'Pants' }
+  { id: 10, title: 'Celana Jumper TDP Grey', price: 5, image: celanaJumperTdpGrey, type: 'Pants', link: 'https://www.roblox.com/catalog/117737994942390/TDP-Grey-Pants', isNew: true },
+  { id: 9, title: 'Jaket TDP', price: 5, image: jaketTdp, type: 'Shirt', link: 'https://www.roblox.com/catalog/71703674823383/TDP-Jacket', isNew: true },
+  { id: 8, title: 'TDP MECHANIC PANTS', price: 5, image: tdpMechanicPants, type: 'Pants', link: 'https://www.roblox.com/catalog/128195002810300/TDP-MECHANIC-PANTS' },
+  { id: 7, title: 'TDP MECHANIC V1', price: 5, image: tdpMechanicV1, type: 'Shirt', link: 'https://www.roblox.com/catalog/84250597815895/TDP-MECHANIC-V1' },
+  { id: 6, title: 'TDP V4 Pinky Pants', price: 5, image: tdpV4PinkyPants, type: 'Pants', link: 'https://www.roblox.com/catalog/124618391968431/TDP-Pinky-Pants' },
+  { id: 5, title: 'TDP V4 Pinky Boy', price: 5, image: tdpV4PinkyBoy, type: 'Shirt', link: 'https://www.roblox.com/catalog/81499276980301/TDP-Pinky-boy' },
+  { id: 4, title: 'TDP On Fire Shirt', price: 5, image: tdpOnFireShirt, type: 'Shirt', link: 'https://www.roblox.com/catalog/133884655223379/TDP-On-Fire-Shirt' },
+  { id: 3, title: 'TDP Sport Pants', price: 5, image: tdpSportPants, type: 'Pants', link: 'https://www.roblox.com/catalog/76938877127778/Jumper-TDP-Distro' },
+  { id: 2, title: 'TDP Sweater', price: 5, image: tdpSweater, type: 'Shirt', link: 'https://www.roblox.com/catalog/83496818350776/Team-Drag-Pelan-Distro' },
+  { id: 1, title: 'Team Drag Pelan Official Shirt', price: 5, image: teamDragPelanOfficialShirt, type: 'Shirt', link: 'https://www.roblox.com/catalog/131981903348061/Team-Drag-Pelan-Official-Shirt' },
 ];
 
 const selectedFilter = ref('All');
@@ -151,6 +151,8 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
           :price="product.price"
           :image="product.image"
           :type="product.type"
+          :link="product.link"
+          :isNew="product.isNew"
         />
       </div>
       <div v-else class="text-center py-12 text-gray-500 font-racing text-xl">

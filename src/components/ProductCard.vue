@@ -3,7 +3,9 @@ defineProps({
   title: String,
   price: Number,
   image: String,
-  type: String
+  type: String,
+  link: String,
+  isNew: Boolean
 });
 </script>
 
@@ -23,6 +25,13 @@ defineProps({
           {{ type }}
         </span>
       </div>
+
+      <!-- New Badge -->
+      <div v-if="isNew" class="absolute top-3 right-3 z-20 animate-pulse">
+        <span class="px-2 py-1 bg-racing-red shadow-[0_0_10px_rgba(255,0,0,0.5)] border border-white/20 rounded text-[10px] font-bold uppercase tracking-wider text-white skew-x-[-10deg] block">
+          NEW
+        </span>
+      </div>
     </div>
     
     <!-- Content -->
@@ -37,9 +46,9 @@ defineProps({
           </span>
         </div>
         
-        <button class="bg-white text-black hover:bg-racing-red hover:text-white px-5 py-2 rounded font-bold text-sm uppercase tracking-wide transition-colors transform active:scale-95 skew-x-[-10deg]">
-          <span class="block skew-x-[10deg]">SIKAT</span>
-        </button>
+        <a :href="link" target="_blank" class="bg-white text-black hover:bg-racing-red hover:text-white px-5 py-2 rounded font-bold text-sm uppercase tracking-wide transition-colors transform active:scale-95 skew-x-[-10deg]">
+          <span class="block skew-x-[10deg]">BUY</span>
+        </a>
       </div>
     </div>
   </div>
