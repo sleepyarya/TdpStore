@@ -97,13 +97,13 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
 </script>
 
 <template>
-  <div class="bg-racing-black min-h-screen text-white selection:bg-racing-red selection:text-white cursor-none">
+  <div class="bg-racing-black min-h-screen text-white selection:bg-racing-red selection:text-white cursor-none overflow-x-hidden w-full">
     <CustomCursor />
     <OpeningAnimation v-if="showSplash" @finished="showSplash = false" />
     <Navbar />
     <HeroSection />
     
-    <main id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+    <main id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       <!-- Section Header -->
       <div class="text-center mb-12 relative z-10">
         <h2 class="text-4xl md:text-5xl font-racing font-bold mb-4 text-white uppercase italic tracking-tighter">
