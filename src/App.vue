@@ -2,7 +2,10 @@
 import Navbar from './components/Navbar.vue';
 import HeroSection from './components/HeroSection.vue';
 import ProductCard from './components/ProductCard.vue';
+import OpeningAnimation from './components/OpeningAnimation.vue';
 import { ref, computed, onMounted } from 'vue';
+
+const showSplash = ref(true);
 
 // Import images
 import teamDragPelanOfficialShirt from './assets/team_drag_pelan_official_shirt.png';
@@ -94,6 +97,7 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
 
 <template>
   <div class="bg-racing-black min-h-screen text-white selection:bg-racing-red selection:text-white">
+    <OpeningAnimation v-if="showSplash" @finished="showSplash = false" />
     <Navbar />
     <HeroSection />
     

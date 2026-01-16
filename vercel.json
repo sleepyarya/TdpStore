@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/roblox-api/:path*",
+            "destination": "https://users.roblox.com/:path*"
+        }
+    ]
+}
