@@ -281,10 +281,14 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
         <p class="text-gray-500 mb-8 max-w-md mx-auto leading-relaxed">
           Tempatnya para sultan dan pembalap santuy berkumpul. <br/>Gak perlu kencang, yang penting gaya dan solidaritas!
         </p>
-        <div class="flex justify-center gap-8 mb-12">
+        <div class="flex justify-center gap-8 mb-12 flex-wrap">
           <a href="https://www.tiktok.com/@team.drag.pelan" target="_blank" class="text-gray-400 hover:text-white transition-colors font-bold uppercase tracking-wider hover:text-racing-red flex items-center gap-2">
             <!-- Simple TikTok Icon/Text -->
             <span>TikTok: @team.drag.pelan</span>
+          </a>
+          <a href="https://discord.gg/vJ4RtDJeK9" target="_blank" class="text-gray-400 hover:text-white transition-colors font-bold uppercase tracking-wider hover:text-neon-blue flex items-center gap-2">
+            <!-- Simple Discord Icon/Text -->
+             <span>Discord Community</span>
           </a>
         </div>
         <div class="pt-8 border-t border-zinc-900 text-sm text-gray-600">
