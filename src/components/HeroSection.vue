@@ -15,8 +15,10 @@
       <h1 class="text-4xl sm:text-5xl md:text-7xl font-racing font-black text-white mb-6 uppercase italic leading-relaxed animate-fade-in-up delay-100 flex flex-col items-center">
         <span class="text-3xl sm:text-4xl md:text-5xl mb-2">Tampil Beda Di</span>
         <div class="relative transform -skew-x-12 hover:scale-105 transition-transform duration-300">
-           <span class="block text-6xl sm:text-7xl md:text-8xl font-logo font-black text-white leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] paint-order-stroke" style="-webkit-text-stroke: 8px black; paint-order: stroke fill;">DRAG DRIVE</span>
-           <span class="block text-5xl sm:text-6xl md:text-7xl font-logo font-black text-[#FFB800] leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] -mt-2 sm:-mt-4 paint-order-stroke" style="-webkit-text-stroke: 6px black; paint-order: stroke fill;">SIMULATOR</span>
+          <a href="https://www.roblox.com/id/games/131378148336503/Drag-Drive-Simulator" target="_blank" class="block hover:opacity-90 transition-opacity">
+             <span class="block text-6xl sm:text-7xl md:text-8xl font-logo font-black text-white leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] paint-order-stroke" style="-webkit-text-stroke: 8px black; paint-order: stroke fill;">DRAG DRIVE</span>
+             <span class="block text-5xl sm:text-6xl md:text-7xl font-logo font-black text-[#FFB800] leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] -mt-2 sm:-mt-4 paint-order-stroke" style="-webkit-text-stroke: 6px black; paint-order: stroke fill;">SIMULATOR</span>
+          </a>
         </div>
       </h1>
       
