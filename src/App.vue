@@ -19,6 +19,10 @@ import tdpMechanicV1 from './assets/tdp_mechanic_v1.png';
 import tdpMechanicPants from './assets/tdp_mechanic_pants.png';
 import jaketTdp from './assets/jaket_tdp.png';
 import celanaJumperTdpGrey from './assets/celana_jumper_tdp_grey.png';
+import tdpSchoolUniform from './assets/tdp_school_uniform.png';
+import tdpSchoolPants from './assets/tdp_school_pants.png';
+import tdpSchoolUniformGirl from './assets/tdp_school_uniform_girl.png';
+import tdpSchoolSkirt from './assets/tdp_school_skirt.png';
 
 import ownerImg from './assets/owner.png';
 import admin1Img from './assets/admin1.png';
@@ -61,8 +65,12 @@ onMounted(() => {
 });
 
 const products = [
-  { id: 10, title: 'Celana Jumper TDP Grey', price: 5, image: celanaJumperTdpGrey, type: 'Pants', link: 'https://www.roblox.com/catalog/117737994942390/TDP-Grey-Pants', isNew: true },
-  { id: 9, title: 'Jaket TDP', price: 5, image: jaketTdp, type: 'Shirt', link: 'https://www.roblox.com/catalog/71703674823383/TDP-Jacket', isNew: true },
+  { id: 14, title: 'Rok Sekolah TDP', price: 5, image: tdpSchoolSkirt, type: 'Pants', link: 'https://www.roblox.com/catalog/79704488757551/TDP-School-Skirt', isNew: true },
+  { id: 13, title: 'Baju Sekolah TDP (Perempuan)', price: 5, image: tdpSchoolUniformGirl, type: 'Shirt', link: 'https://www.roblox.com/catalog/119543647518946/TDP-School-Uniform-Girl', isNew: true },
+  { id: 12, title: 'Celana Pendek Sekolah TDP', price: 5, image: tdpSchoolPants, type: 'Pants', link: 'https://www.roblox.com/catalog/92656435754682/TDP-School-Pants', isNew: true },
+  { id: 11, title: 'Rompi Sekolah TDP', price: 5, image: tdpSchoolUniform, type: 'Shirt', link: 'https://www.roblox.com/catalog/74687692951873/TDP-School-Uniform', isNew: true },
+  { id: 10, title: 'Celana Jumper TDP Grey', price: 5, image: celanaJumperTdpGrey, type: 'Pants', link: 'https://www.roblox.com/catalog/117737994942390/TDP-Grey-Pants' },
+  { id: 9, title: 'Jaket TDP', price: 5, image: jaketTdp, type: 'Shirt', link: 'https://www.roblox.com/catalog/71703674823383/TDP-Jacket' },
   { id: 8, title: 'TDP MECHANIC PANTS', price: 5, image: tdpMechanicPants, type: 'Pants', link: 'https://www.roblox.com/catalog/128195002810300/TDP-MECHANIC-PANTS' },
   { id: 7, title: 'TDP MECHANIC V1', price: 5, image: tdpMechanicV1, type: 'Shirt', link: 'https://www.roblox.com/catalog/84250597815895/TDP-MECHANIC-V1' },
   { id: 6, title: 'TDP V4 Pinky Pants', price: 5, image: tdpV4PinkyPants, type: 'Pants', link: 'https://www.roblox.com/catalog/124618391968431/TDP-Pinky-Pants' },

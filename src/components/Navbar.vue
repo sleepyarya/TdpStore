@@ -1,6 +1,7 @@
 <script setup>
 import { ShoppingCart, Menu, X } from 'lucide-vue-next';
 import { ref } from 'vue';
+import logoImg from '../assets/logo_tdp_new.png';
 
 const isOpen = ref(false);
 </script>
@@ -10,11 +11,24 @@ const isOpen = ref(false);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0, 0)">
-          <div class="w-15 h-8 bg-racing-red skew-x-[-12deg] flex items-center justify-center shadow-[0_0_15px_rgba(255,0,0,0.5)]">
-            <span class="text-white font-racing font-bold text-lg skew-x-[12deg]">TDP</span>
-          </div>
-          <span class="text-white font-racing text-xl font-bold tracking-wider">TEAM <span class="text-racing-red">DRAG PELAN</span></span>
+        <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer group" onclick="window.scrollTo(0, 0)">
+           <!-- TDS Graphic from Image -->
+           <div class="relative h-16 w-auto overflow-hidden flex items-center">
+             <!-- Use object-left to crop/focus on the TDP part if image is wide, or just show it all. 
+                  Since the image provided has text below, we might need to mask it or just accept it if the user wants strictly the top part.
+                  However, using blend mode on the whole image is easiest. 
+                  The user wants #TEAMDRAGPELAN beside it. The image has it below. 
+                  If I use the whole image as is, the text will be below.
+                  I will try to scale/crop via CSS if needed, but for now let's just use the image mixed.
+                  Actually, if the image contains the text, I should hiding the text part of the image if I want to render text beside it.
+                  Let's assume the user just wants the TDP symbol from the image. 
+                  The TDP symbol is the top part. I'll wrap it in a div with restricted height or use object-position.
+             -->
+             <img :src="logoImg" alt="TDP Logo" class="h-[180%] w-auto max-w-none object-cover object-top -mt-2 mix-blend-screen" />
+           </div>
+           
+           <!-- Text Side by Side -->
+           <span class="hidden sm:block text-xl font-bold tracking-widest text-white font-logo mt-1 group-hover:text-racing-red transition-colors">#TEAMDRAGPELAN</span>
         </div>
 
         <!-- Desktop Menu -->
