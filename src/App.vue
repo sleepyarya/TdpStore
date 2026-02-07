@@ -23,6 +23,10 @@ import tdpSchoolUniform from './assets/tdp_school_uniform.png';
 import tdpSchoolPants from './assets/tdp_school_pants.png';
 import tdpSchoolUniformGirl from './assets/tdp_school_uniform_girl.png';
 import tdpSchoolSkirt from './assets/tdp_school_skirt.png';
+import tdpMascotShirt from './assets/tdp_mascot_shirt.png';
+import tdpMascotPants from './assets/tdp_mascot_pants.png';
+import tdpRecolorableShirt from './assets/tdp_recolorable_shirt.png';
+import tdpRecolorablePants from './assets/tdp_recolorable_pants.png';
 
 import ownerImg from './assets/owner.png';
 import admin1Img from './assets/admin1.png';
@@ -65,10 +69,14 @@ onMounted(() => {
 });
 
 const products = [
-  { id: 14, title: 'Rok Sekolah TDP', price: 5, image: tdpSchoolSkirt, type: 'Pants', link: 'https://www.roblox.com/catalog/79704488757551/TDP-School-Skirt', isNew: true },
-  { id: 13, title: 'Baju Sekolah TDP (Perempuan)', price: 5, image: tdpSchoolUniformGirl, type: 'Shirt', link: 'https://www.roblox.com/catalog/119543647518946/TDP-School-Uniform-Girl', isNew: true },
-  { id: 12, title: 'Celana Pendek Sekolah TDP', price: 5, image: tdpSchoolPants, type: 'Pants', link: 'https://www.roblox.com/catalog/92656435754682/TDP-School-Pants', isNew: true },
-  { id: 11, title: 'Rompi Sekolah TDP', price: 5, image: tdpSchoolUniform, type: 'Shirt', link: 'https://www.roblox.com/catalog/74687692951873/TDP-School-Uniform', isNew: true },
+  { id: 18, title: 'TDP RECOLORABLE SHIRT', price: 5, image: tdpRecolorableShirt, type: 'Shirt', link: 'https://www.roblox.com/catalog/120623804063435/TDP-RECOLORABLE', isNew: true },
+  { id: 17, title: 'TDP RECOLORABLE PANTS', price: 5, image: tdpRecolorablePants, type: 'Pants', link: 'https://www.roblox.com/catalog/106555519157296/TDP-RECOLORABLE-PANTS', isNew: true },
+  { id: 16, title: 'TDP MASCOT SHIRT', price: 5, image: tdpMascotShirt, type: 'Shirt', link: 'https://www.roblox.com/catalog/77623414972067/TDP-MASCOT-RECOLORABLE', isNew: true },
+  { id: 15, title: 'TDP MASCOT PANTS', price: 5, image: tdpMascotPants, type: 'Pants', link: 'https://www.roblox.com/catalog/133389965124509/TDP-MASCOT-RECOLORABLE-PANTS', isNew: true },
+  { id: 14, title: 'Rok Sekolah TDP', price: 5, image: tdpSchoolSkirt, type: 'Pants', link: 'https://www.roblox.com/catalog/79704488757551/TDP-School-Skirt' },
+  { id: 13, title: 'Baju Sekolah TDP (Perempuan)', price: 5, image: tdpSchoolUniformGirl, type: 'Shirt', link: 'https://www.roblox.com/catalog/119543647518946/TDP-School-Uniform-Girl' },
+  { id: 12, title: 'Celana Pendek Sekolah TDP', price: 5, image: tdpSchoolPants, type: 'Pants', link: 'https://www.roblox.com/catalog/92656435754682/TDP-School-Pants' },
+  { id: 11, title: 'Rompi Sekolah TDP', price: 5, image: tdpSchoolUniform, type: 'Shirt', link: 'https://www.roblox.com/catalog/74687692951873/TDP-School-Uniform' },
   { id: 10, title: 'Celana Jumper TDP Grey', price: 5, image: celanaJumperTdpGrey, type: 'Pants', link: 'https://www.roblox.com/catalog/117737994942390/TDP-Grey-Pants' },
   { id: 9, title: 'Jaket TDP', price: 5, image: jaketTdp, type: 'Shirt', link: 'https://www.roblox.com/catalog/71703674823383/TDP-Jacket' },
   { id: 8, title: 'TDP MECHANIC PANTS', price: 5, image: tdpMechanicPants, type: 'Pants', link: 'https://www.roblox.com/catalog/128195002810300/TDP-MECHANIC-PANTS' },
