@@ -33,6 +33,7 @@ import admin1Img from './assets/admin1.png';
 import admin2Img from './assets/admin2.png';
 import admin3Img from './assets/admin3.png';
 import admin4Img from './assets/admin4.png';
+import admin5Img from './assets/admin5.png';
 
 // Team Data
 const team = ref({
@@ -41,6 +42,7 @@ const team = ref({
   admin2: { id: 8905246034, name: 'Loading...', displayName: 'Loading...', role: 'ADMIN' },
   admin3: { id: 10188168383, name: 'Loading...', displayName: 'Loading...', role: 'ADMIN' },
   admin4: { id: 5350394157, name: 'Loading...', displayName: 'Loading...', role: 'ADMIN' },
+  admin5: { id: 3200992096, name: 'Loading...', displayName: 'Loading...', role: 'ADMIN' },
 });
 
 const fetchRobloxUser = async (key, userId) => {
@@ -66,6 +68,7 @@ onMounted(() => {
   fetchRobloxUser('admin2', team.value.admin2.id);
   fetchRobloxUser('admin3', team.value.admin3.id);
   fetchRobloxUser('admin4', team.value.admin4.id);
+  fetchRobloxUser('admin5', team.value.admin5.id);
 });
 
 const products = [
@@ -200,7 +203,8 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
                 <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-racing-red shadow-[0_0_20px_rgba(255,0,0,0.3)]">
                   <img :src="ownerImg" alt="Owner" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                <h3 class="text-2xl font-racing font-bold text-center text-white mb-2">OWNER</h3>
+                <h3 class="text-2xl font-racing font-bold text-center text-white">OWNER</h3>
+                <p class="text-sm font-racing font-bold text-center text-orange-500 mb-3 mt-1 tracking-widest uppercase">Headstaff</p>
                 <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.owner.name }}</p>
                 <div class="mt-6 flex justify-center">
                   <span class="px-4 py-2 bg-zinc-900 border border-zinc-700 rounded text-sm text-racing-red font-bold hover:bg-racing-red hover:text-white transition-colors">
@@ -218,7 +222,8 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
                   <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
                     <img :src="admin1Img" alt="Admin 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <h3 class="text-xl font-racing font-bold text-center text-white mb-2">ADMIN</h3>
+                  <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
+                  <p class="text-sm font-racing font-bold text-center text-lime-400 mb-3 mt-1 tracking-widest uppercase">Crew</p>
                   <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin1.name }}</p>
                 </div>
                 <div class="mt-6 flex justify-center">
@@ -237,7 +242,8 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
                   <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
                     <img :src="admin2Img" alt="Admin 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <h3 class="text-xl font-racing font-bold text-center text-white mb-2">ADMIN</h3>
+                  <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
+                  <p class="text-sm font-racing font-bold text-center text-yellow-500 mb-3 mt-1 tracking-widest uppercase">Donatur TDP</p>
                   <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin2.name }}</p>
                 </div>
                 <div class="mt-6 flex justify-center">
@@ -257,7 +263,8 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
                      <img :src="admin3Img" alt="Admin 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                    </div>
                    <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
-                   <p class="text-sm font-racing font-bold text-center text-racing-red mb-3 mt-1 tracking-widest uppercase">WEB DEVELOPER</p>
+                   <p class="text-sm font-racing font-bold text-center text-racing-red mt-1 tracking-widest uppercase">WEB DEVELOPER</p>
+                   <p class="text-sm font-racing font-bold text-center text-lime-400 mb-3 tracking-widest uppercase">Crew</p>
                    <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin3.name }}</p>
                 </div>
                 <div class="mt-6 flex justify-center">
@@ -269,14 +276,37 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
           </a>
           
           <!-- Admin 4 -->
-          <a href="https://www.roblox.com/id/users/5350394157/profile" target="_blank" class="group relative w-full max-w-sm lg:col-start-2">
+          <a href="https://www.roblox.com/id/users/5350394157/profile" target="_blank" class="group relative w-full max-w-sm lg:translate-x-[50%]">
              <div class="absolute inset-0 bg-neon-blue blur-xl opacity-10 group-hover:opacity-30 transition-opacity duration-500"></div>
              <div class="relative bg-black border border-zinc-800 p-6 rounded-xl hover:border-neon-blue transition-all duration-300 transform group-hover:-translate-y-2 h-full flex flex-col justify-between">
-                <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
-                  <img :src="admin4Img" alt="Admin 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                <div>
+                   <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
+                     <img :src="admin4Img" alt="Admin 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                   </div>
+                   <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
+                   <p class="text-sm font-racing font-bold text-center text-purple-500 mb-3 mt-1 tracking-widest uppercase">Contributor</p>
+                   <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin4.name }}</p>
                 </div>
-                <h3 class="text-xl font-racing font-bold text-center text-white mb-2">ADMIN</h3>
-                <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin4.name }}</p>
+                <div class="mt-6 flex justify-center">
+                  <span class="px-4 py-2 bg-zinc-900 border border-zinc-700 rounded text-sm text-neon-blue font-bold hover:bg-neon-blue hover:text-black transition-colors">
+                     View Profile
+                  </span>
+                </div>
+             </div>
+          </a>
+
+          <!-- Admin 5 -->
+          <a href="https://www.roblox.com/id/users/3200992096/profile" target="_blank" class="group relative w-full max-w-sm lg:translate-x-[50%]">
+             <div class="absolute inset-0 bg-neon-blue blur-xl opacity-10 group-hover:opacity-30 transition-opacity duration-500"></div>
+             <div class="relative bg-black border border-zinc-800 p-6 rounded-xl hover:border-neon-blue transition-all duration-300 transform group-hover:-translate-y-2 h-full flex flex-col justify-between">
+                <div>
+                   <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
+                     <img :src="admin5Img" alt="Admin 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 bg-[#e2e2e2]" />
+                   </div>
+                   <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
+                   <p class="text-sm font-racing font-bold text-center text-purple-500 mb-3 mt-1 tracking-widest uppercase">Contributor</p>
+                   <p class="text-center text-gray-400 font-medium tracking-wider text-xl">{{ team.admin5.name }}</p>
+                </div>
                 <div class="mt-6 flex justify-center">
                   <span class="px-4 py-2 bg-zinc-900 border border-zinc-700 rounded text-sm text-neon-blue font-bold hover:bg-neon-blue hover:text-black transition-colors">
                      View Profile
