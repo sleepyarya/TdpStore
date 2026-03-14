@@ -240,7 +240,7 @@ const filterOptions = ['All', 'Shirt', 'Pants'];
              <div class="relative bg-black border border-zinc-800 p-6 rounded-xl hover:border-neon-blue transition-all duration-300 transform group-hover:-translate-y-2 h-full flex flex-col justify-between">
                 <div>
                   <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-blue shadow-[0_0_15px_rgba(0,255,255,0.2)]">
-                    <img :src="admin2Img" alt="Admin 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                    <img :src="admin2Img" alt="Admin 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 bg-white" />
                   </div>
                   <h3 class="text-xl font-racing font-bold text-center text-white">ADMIN</h3>
                   <p class="text-sm font-racing font-bold text-center text-yellow-500 mb-3 mt-1 tracking-widest uppercase">Donatur TDP</p>
